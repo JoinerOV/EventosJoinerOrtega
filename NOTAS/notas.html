@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../IMC/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../IMC/calculadora.html">Calculadora IMC</a></li>
+            <li><a href="../DIVISA/divisas.html">Convertidor de divisa</a></li>
+            <li><a href="./notas.html">Notas</a></li>
+        </ul>
+    </nav>
+    <div class="container" id="notes">
+        <h1>Aplicación de Notas</h1>
+        <form id="noteForm">
+            <div class="input-group">
+                <label for="noteTitle">Título:</label>
+                <input type="text" id="noteTitle" required>
+            </div>
+            <div class="input-group">
+                <label for="noteText">Texto:</label>
+                <textarea id="noteText" required></textarea>
+            </div>
+            <div class="btnotas">
+                <button type="button" id="addNoteButton">Guardar Nota</button>
+                <button type="button" id="clearFieldsButton">Limpiar Campos</button>
+            </div>
+        </form>
+        <div class="input-group">
+            <label for="searchText">Buscar por texto:</label>
+            <input type="text" id="searchText">
+        </div>
+        <div class="input-group">
+            <label for="filterCompleted">Mostrar solo realizadas:</label>
+            <input type="checkbox" id="filterCompleted">
+        </div>
+        <div id="notesList"></div>
+    </div>
+    <script src="./notas.js"></script>
+</body>
+
+</html>
